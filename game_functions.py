@@ -19,4 +19,19 @@ def check_higher_lower(current_val, next_val, user_input):
 
 # function to be used in game_3: Hangman
 def process_guess(letter, board, word):
-    pass
+    indicies = all_indicies(word, letter)
+    for i in indicies:
+        board[i] = letter
+    if len(list(indicies)) > 0:
+        print("Well done! '" + letter + "' can be found in the word.")
+        return True
+    print("Sorry! '" + letter + "' can not be found in the word.")
+    return False
+
+def all_indicies(word, letter):
+    word_list = list(word)
+    index_list = []
+    for i in range(len(word_list)):
+        if word_list[i] == letter:
+            index_list.append(i)
+    return index_list
