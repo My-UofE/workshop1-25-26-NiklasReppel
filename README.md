@@ -15,7 +15,7 @@ This is a GitHub classroom assignment containing template code for the workshop.
 -----------------
 ```
 
-Figure 1: An ascii-art image of a ????
+Figure 1: An ascii-art image of a snowman
 
 
 
